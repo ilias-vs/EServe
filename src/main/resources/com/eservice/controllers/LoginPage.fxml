@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="794.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" style="-fx-background-color: #8a3033;" HBox.hgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="146.0" fitWidth="154.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/EserviceWhite.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+         <children>
+            <VBox alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="119.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Eservice.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox>
+               <children>
+                  <Label text="Welcome Back">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="40.0" />
+               </VBox.margin>
+            </VBox>
+            <JFXTextField fx:id="email" focusColor="#8a3033" labelFloat="true" promptText="Email">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="40.0" right="40.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXPasswordField fx:id="password" focusColor="#8a3033" labelFloat="true" promptText="Password">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="40.0" right="40.0" />
+               </VBox.margin>
+            </JFXPasswordField>
+            <JFXButton fx:id="loginButton" buttonType="RAISED" onAction="#login" prefHeight="41.0" prefWidth="104.0" style="-fx-background-color: #8a3033;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </JFXButton>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label text="don't have an account ?" />
+                  <Label onMouseClicked="#singUp" text="Sing Up Here" textFill="#8a3033">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

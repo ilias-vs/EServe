@@ -1,0 +1,189 @@
+/*START NAVIGATION */
+
+.sidebarItem{
+    -fx-background-color: #8a3033;
+    -fx-text-fill: WHITE;
+}
+.sidebarItem:hover{
+    -fx-background-color: #792A2D;
+    -fx-border-color: WHITE;
+    -fx-border-width: 0px 0px 0px 3px;
+}
+
+.sidebarItem:focused{
+    -fx-background-color: #511C29;
+    -fx-border-color: WHITE;
+    -fx-border-width: 0px 0px 0px 3px;
+}
+
+/*END NAVIGATION */
+
+
+
+
+
+/*START MENU*/
+.menu-add-button{
+    -fx-scale-x: 1; /* Scale the button width by 10% */
+    -fx-scale-y: 1; /* Scale the button height by 10% */
+}
+.menu-add-button:hover{
+    -fx-scale-x: 1.2; /* Scale the button width by 10% */
+    -fx-scale-y: 1.2; /* Scale the button height by 10% */
+    -fx-cursor: hand;
+
+}
+
+.edit-icon{
+    -fx-scale-x: 1; /* Scale the button width by 10% */
+    -fx-scale-y: 1; /* Scale the button height by 10% */
+}
+
+.edit-icon:hover{
+    -fx-scale-x: 1.2; /* Scale the button width by 10% */
+    -fx-scale-y: 1.2; /* Scale the button height by 10% */
+    -fx-cursor: hand;
+
+}
+
+.delete-icon{
+    -fx-scale-x: 1; /* Scale the button width by 10% */
+    -fx-scale-y: 1; /* Scale the button height by 10% */
+}
+
+.delete-icon:hover{
+    -fx-scale-x: 1.2; /* Scale the button width by 10% */
+    -fx-scale-y: 1.2; /* Scale the button height by 10% */
+    -fx-cursor: hand;
+}
+
+.list-view {
+    -fx-padding: 3px ;
+    -fx-background-color: transparent ;
+}
+
+.list-cell {
+    -fx-padding: 40 ;
+    -fx-background-color: transparent, -fx-background ;
+    -fx-background-insets: 0px, 2px ;
+}
+
+.list-cell:empty {
+    -fx-background-color: transparent ;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: transparent;
+}
+.list-cell:odd { -fx-background-color: transparent; }
+.list-cell:even { -fx-background-color: transparent; }
+.list-cell:filled:hover {
+    -fx-background-color: transparent;
+
+}
+
+
+.grid-panel{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 5, 10);
+    -fx-background-color:WHITE;
+    -fx-background-radius: 15;
+}
+
+.title-panel{
+    -fx-background-color:#511C29;
+    -fx-background-radius:15 15 0 0;
+    -fx-text-fill:white;
+}
+.title-panel .label{
+    -fx-text-fill:white;
+}
+
+.scroll-pane {
+    -fx-background-color:transparent;
+}
+
+.scroll-pane .scroll-bar .increment-button,
+.scroll-pane .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 2;
+}
+.scroll-pane .scroll-bar:vertical .thumb{
+    -fx-background-color:  linear-gradient(to bottom,#8a3033, #511C29);
+}
+.scroll-pane  .scroll-bar:horizontal .thumb{
+    -fx-background-color:  linear-gradient(to right, #8a3033, #511C29);
+}
+.scroll-pane > .corner {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar:vertical,
+.scroll-pane .scroll-bar:vertical .track,
+.scroll-pane .scroll-bar:vertical .track-background,
+.scroll-pane .scroll-bar:horizontal,
+.scroll-pane .scroll-bar:horizontal .track,
+.scroll-pane .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+/*END MENU*/
+
+
+
+
+/*START TABLE THEME*/
+
+.table-box{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 5, 10);
+    -fx-background-color:#8a3033;
+    -fx-background-radius: 15;
+    -fx-text-fill:white;
+}
+
+.toggle-table{
+    -fx-text-fill:white;
+}
+
+.table-title{
+    -fx-background-radius: 15;
+    -fx-background-color:#511C29;
+    -fx-text-fill:white;
+}
+.table-title .label{
+    -fx-text-fill:white;
+}
+
+
+.table-delete{
+    -fx-scale-x: 1; /* Scale the button width by 10% */
+    -fx-scale-y: 1; /* Scale the button height by 10% */
+}
+
+.table-delete:hover{
+    -fx-scale-x: 1.2; /* Scale the button width by 10% */
+    -fx-scale-y: 1.2; /* Scale the button height by 10% */
+    -fx-cursor: hand;
+}
+/*END TABLE THEME*/
+
+
+/*START ORDER */
+.order-box{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 5, 10);
+    -fx-background-color:white;
+    -fx-background-radius: 15;
+    -fx-text-fill:white;
+}
+
+.order-title{
+    -fx-padding: 0 20px;
+    -fx-background-radius: 15;
+    -fx-background-color:#511C29;
+    -fx-text-fill:white;
+}
+.order-title .label{
+    -fx-margin-left: 10;
+    -fx-text-fill:white;
+}
+/*END ORDER*/
+

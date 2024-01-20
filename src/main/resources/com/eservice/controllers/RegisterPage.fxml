@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<GridPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <VBox alignment="CENTER" prefHeight="557.0" prefWidth="736.0">
+         <children>
+            <ImageView fitHeight="111.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Eservice.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </ImageView>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="730.0">
+               <children>
+                  <VBox alignment="CENTER" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label text="Store" textFill="#8a3033">
+                           <VBox.margin>
+                              <Insets bottom="40.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <StackPane maxHeight="150.0" maxWidth="150.0" minHeight="50.0" prefWidth="50.0">
+                           <VBox.margin>
+                              <Insets bottom="40.0" />
+                           </VBox.margin>
+                           <children>
+                              <Circle fx:id="storeImage" fill="WHITE" onMouseClicked="#setNewImage" radius="80.0" stroke="#8a3033" strokeType="INSIDE" strokeWidth="4.0" />
+                              <ImageView fitHeight="33.0" fitWidth="33.0" onMouseClicked="#setNewImage" pickOnBounds="true" preserveRatio="true">
+                                 <StackPane.margin>
+                                    <Insets left="130.0" top="135.0" />
+                                 </StackPane.margin>
+                                 <image>
+                                    <Image url="@../Images/icons8-edit-64.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <JFXTextField fx:id="storeName" focusColor="#8a3033" labelFloat="true" maxWidth="250.0" promptText="Store Name">
+                           <VBox.margin>
+                              <Insets bottom="30.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                        <JFXTextField fx:id="storeAddress" focusColor="#8a3033" labelFloat="true" maxWidth="250.0" promptText="Address">
+                           <VBox.margin>
+                              <Insets bottom="30.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label text="Owner" textFill="#8a3033">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="40.0" />
+                           </VBox.margin>
+                        </Label>
+                        <JFXTextField fx:id="ownerName" focusColor="#8a3033" labelFloat="true" maxWidth="250.0" promptText="Name">
+                           <VBox.margin>
+                              <Insets bottom="30.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                        <JFXTextField fx:id="ownerLast" focusColor="#8a3033" labelFloat="true" maxWidth="250.0" promptText="Last Name">
+                           <VBox.margin>
+                              <Insets bottom="30.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                        <JFXTextField fx:id="ownerEmail" focusColor="#8a3033" labelFloat="true" layoutX="82.0" layoutY="281.0" maxWidth="250.0" promptText="Email">
+                           <VBox.margin>
+                              <Insets bottom="30.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                        <JFXPasswordField fx:id="ownerPassword" focusColor="#8a3033" maxWidth="250.0" promptText="Password">
+                           <VBox.margin>
+                              <Insets bottom="30.0" />
+                           </VBox.margin>
+                        </JFXPasswordField>
+                        <JFXPasswordField fx:id="ownerPassConfirm" focusColor="#8a3033" layoutX="10.0" layoutY="281.0" maxWidth="250.0" promptText="Confirm Password" />
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <JFXButton fx:id="registerButton" buttonType="RAISED" onAction="#register" prefHeight="41.0" prefWidth="121.0" style="-fx-background-color: #8a3033;" text="Register" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </JFXButton>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label text="Already registered ?" />
+                  <Label onMouseClicked="#signIn" text="Sing In Here" textFill="#8a3033">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</GridPane>

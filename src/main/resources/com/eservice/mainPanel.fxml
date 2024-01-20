@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="406.0" prefWidth="571.0" stylesheets="@MainTheme.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane fx:id="borderPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox maxHeight="67.0" minHeight="67.0" style="-fx-background-color: #8a3033;" BorderPane.alignment="CENTER">
+               <children>
+                  <StackPane>
+                     <children>
+                        <Label fx:id="Menu" prefHeight="22.0" prefWidth="90.0" styleClass="menu" text="MENU" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" styleClass="menuImg">
+                                 <image>
+                                    <Image url="@Images/img.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label fx:id="MenuClose" prefHeight="22.0" prefWidth="90.0" styleClass="menu" text="MENU" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" styleClass="menuImg">
+                                 <image>
+                                    <Image url="@Images/img.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                  </StackPane>
+                  <Region prefHeight="0.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></Region>
+                  <ImageView fitHeight="61.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/EserviceWhite.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="3.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Region layoutX="100.0" layoutY="10.0" prefHeight="0.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin></Region>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+      <AnchorPane fx:id="slider" prefWidth="177.0" style="-fx-background-color: #8a3033;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <VBox cache="true" fillWidth="false" maxHeight="1.7976931348623157E308" maxWidth="177.0" minWidth="177.0" prefWidth="177.0">
+               <children>
+                  <Button alignment="BASELINE_LEFT" layoutX="15.0" layoutY="10.0" onAction="#getHomePage" prefHeight="38.0" prefWidth="166.0" styleClass="sidebarItem" text="Home" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" onAction="#getMenuPage" prefHeight="38.0" prefWidth="166.0" styleClass="sidebarItem" text="Menu" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" onAction="#getTablePage" prefHeight="38.0" prefWidth="166.0" styleClass="sidebarItem" text="Tables" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" onAction="#getOrderPage" prefHeight="38.0" prefWidth="166.0" styleClass="sidebarItem" text="Orders" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" layoutX="15.0" layoutY="116.0" onAction="#getProfilePage" prefHeight="38.0" prefWidth="166.0" styleClass="sidebarItem" text="My Profile" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" prefHeight="38.0" prefWidth="166.0" styleClass="sidebarItem" text="About" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Region VBox.vgrow="ALWAYS" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
