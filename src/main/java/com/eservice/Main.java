@@ -14,7 +14,8 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;
-
+//TODO create Service that connects the database 
+//TODO NEW VIEWS ADVANCED, POS,SALES AND BUYS
 public class Main extends Application {
     private Scene scene;
 
